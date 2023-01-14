@@ -16,7 +16,7 @@
 7. As a whole, in all school types, there are about twice as many students who passed only reading compared to students who passed only math by grade. Allocating more resources to mathematics compared to reading will increase the passing rate for the oveerall area. In particular, District School shows that students who passed only reading are 2.14(9th), 2.21(10th), 2.01(11th), and 2.11(12th) times more by grade than students who passed only math.
 
 ## Data
-1. report_1 data: School bujet and Performing
+- 1. report_1 data: School bujet and Performing
 ```
 #  Calculate averages for the desired columns. 
 spending_math_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"]).mean()["Average Math Score"]
@@ -38,7 +38,7 @@ spending_summary
   height="150"
 />
 
-2. report_2 data: Scool size and Performing
+- 2. report_2 data: Scool size and Performing
 ```
 #  Calculate averages for the desired columns. 
 spending_math_scores = school_spending_df.groupby(["Spending Ranges (Per Student)"]).mean()["Average Math Score"]
@@ -61,7 +61,7 @@ spending_summary
   height="150"
 />
 
-3. report_3 data: Scool Type and Performing
+- 3. report_3 data: Scool Type and Performing
 ```
 # Group the per_school_summary DataFrame by "School Type" and average the results.
 type_math_scores = per_school_summary.groupby(per_school_summary["School Type"]).mean()
@@ -90,7 +90,9 @@ type_summary
   width="400"
   height="150"
 />
-4. report_4 data: On passing math standard deviationd VS. reading standard deviation
+
+
+- 4. report_4 data: On passing math standard deviationd VS. reading standard deviation
 ```
 s_t_d=per_school_summary.std()
 m_e_a_n=per_school_summary.mean()
@@ -104,7 +106,7 @@ avg_std
   height="150"
 />
 
-5. report_5 data: Grade and standard deviationd 
+- 5. report_5 data: Grade and standard deviationd 
 ```
 s_t_d_math=math_scores_by_grade.std()
 m_e_a_n_math=math_scores_by_grade.mean()
@@ -120,7 +122,7 @@ grade_std
   height="150"
 />
 
-6. report_6 data: Student decrease by school type 
+- 6. report_6 data: Student decrease by school type 
 
 <img
   src="image/student.png"
@@ -128,7 +130,7 @@ grade_std
   height="150"
 />
 
-7. report_7 data: Only pass on math VS only pass on reading
+- 7. report_7 data: Only pass on math VS only pass on reading
 
 <img
   src="image/ratio.png"
